@@ -151,7 +151,6 @@ command /buy <text>:
             set {_price} to 1000
             set {_blacksmith} to placeholder "nexojobs_blacksmith_level" from player parsed as integer
             
-            # Apply discount
             if {_blacksmith} >= 30:
                 set {_price} to {_price} * 0.7 # 30% off
             else if {_blacksmith} >= 15:
